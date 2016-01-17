@@ -57,7 +57,7 @@ void handle_root() {
 
   str =  String(HTML_HEAD) + "relay: " + String(relay_state) + "<br />";
   #ifdef PIN_DHT
-  str += "temperature: " + String(t) + "%<br />humidity: " + String(h) + "&deg;C<br/>";
+  str += "temperature: " + String(t) + "&deg;C<br />humidity: " + String(h) + "%<br/>";
   #endif
    
   if (relay_state)
